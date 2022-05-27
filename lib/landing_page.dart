@@ -10,7 +10,6 @@ import 'package:sahabit_apps/transaksi/pembayaran/list_pembayaran.dart';
 import 'package:sahabit_apps/transaksi/status_page.dart';
 import 'package:sahabit_apps/transaksi/transaksi_page.dart';
 import 'bookmark_page.dart';
-
 import 'event_page.dart';
 
 class LandingPage extends StatefulWidget {
