@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_onboard/flutter_onboard.dart';
+import 'package:sahabit_apps/landing_page.dart';
 
 class IntroPage extends StatelessWidget {
   final PageController _pageController = PageController();
@@ -10,12 +11,13 @@ class IntroPage extends StatelessWidget {
         pageController: _pageController,
         // Either Provide onSkip Callback or skipButton Widget to handle skip state
         onSkip: () {
-          _onSkipTap(state);
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => LandingPage()),
+          );
         },
         // Either Provide onDone Callback or nextButton Widget to handle done state
-        onDone: () {
-          // print('done tapped');
-        },
+        onDone: () {},
         onBoardData: onBoardData,
         titleStyles: const TextStyle(
           color: Colors.deepOrange,
@@ -37,7 +39,10 @@ class IntroPage extends StatelessWidget {
         // Either Provide onSkip Callback or skipButton Widget to handle skip state
         skipButton: TextButton(
           onPressed: () {
-            _pageController == 3;
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => LandingPage()),
+            );
           },
           child: const Text(
             "Skip",
@@ -86,7 +91,7 @@ class IntroPage extends StatelessWidget {
         curve: Curves.easeInOutSine,
       );
     } else {
-      //print("nextButton pressed");
+      // onDone:()
     }
   }
 
