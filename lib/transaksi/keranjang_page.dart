@@ -206,25 +206,53 @@ class _KeranjangPageState extends State<KeranjangPage> {
   }
 
   Widget _keranjangKosong() {
-    return FutureBuilder(
-        future: Future.delayed(Duration(seconds: 1)),
-        builder: (c, s) => s.connectionState == ConnectionState.done
-            ? keranjanglist.isEmpty
-                ? SafeArea(
-                    child: Center(
-                      child: Container(
-                        padding: EdgeInsets.only(left: 25, right: 25),
-                        child: Text("Keranjang Kosong",
-                            style: TextStyle(fontSize: 18)),
-                      ),
-                    ),
-                  )
-                : Center(
-                    child: CircularProgressIndicator(),
-                  )
-            : Center(
-                child: CircularProgressIndicator(),
-              ));
+    return SafeArea(
+      child: Container(
+        color: Colors.white,
+        child: Column(
+          children: [
+            Positioned(
+              child: Card(
+                elevation: 10.0,
+                shadowColor: Color.fromARGB(255, 29, 11, 11).withOpacity(0.5),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(25.0),
+                ),
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15.0),
+                      image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage('assets/images/braga.png'))),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+
+    // return FutureBuilder(
+    //     future: Future.delayed(Duration(seconds: 1)),
+    //     builder: (c, s) => s.connectionState == ConnectionState.done
+    //         ? keranjanglist.isEmpty
+    //             ? SafeArea(
+    //                 child: Center(
+    //                   child: Container(
+    //                     padding: EdgeInsets.only(left: 25, right: 25),
+    //                     child: Text("Keranjang Kosong",
+    //                         style: TextStyle(fontSize: 18)),
+    //                   ),
+    //                 ),
+    //               )
+    //             : Center(
+    //                 child: CircularProgressIndicator(),
+    //               )
+    //         : Center(
+    //             child: CircularProgressIndicator(),
+    //           ));
   }
 
   Widget _widgetKeranjang() {

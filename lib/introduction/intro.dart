@@ -17,7 +17,12 @@ class IntroPage extends StatelessWidget {
           );
         },
         // Either Provide onDone Callback or nextButton Widget to handle done state
-        onDone: () {},
+        onDone: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => LandingPage()),
+          );
+        },
         onBoardData: onBoardData,
         titleStyles: const TextStyle(
           color: Colors.deepOrange,
@@ -91,7 +96,7 @@ class IntroPage extends StatelessWidget {
         curve: Curves.easeInOutSine,
       );
     } else {
-      // onDone:()
+      // onDone();
     }
   }
 

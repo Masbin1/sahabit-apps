@@ -14,6 +14,7 @@ import 'package:sahabit_apps/model/kategori.dart';
 import 'package:http/http.dart' as http;
 import 'package:sahabit_apps/model/produk.dart';
 import 'package:sahabit_apps/temukan_page.dart';
+import 'package:sahabit_apps/bookmark_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
@@ -222,6 +223,14 @@ class _HomePageState extends State<HomePage> {
               //         MaterialPageRoute(builder: (context) => BookmarkPage()));
               //   },
               // )
+              BuildButton(
+                title: "Voucher",
+                icon: Icons.paid_sharp,
+                press: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => BookmarkPage()));
+                },
+              )
             ],
           ),
           SizedBox(

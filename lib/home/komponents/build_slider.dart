@@ -69,7 +69,7 @@ class _BuildSliderState extends State<BuildSlider> {
                   borderRadius: BorderRadius.circular(5),
                   color: _currentIndex == index
                       ? Color.fromARGB(255, 159, 94, 238)
-                      : Colors.blue.withOpacity(0.3),
+                      : Color.fromARGB(255, 202, 111, 223).withOpacity(0.3),
                 ),
               );
             }),
