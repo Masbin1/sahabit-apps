@@ -14,14 +14,18 @@ class BookmarkPage extends StatelessWidget {
         appBar: AppBar(
             title: Text(
               "My Bookmarks",
-              style: TextStyle(color: Color.fromARGB(255, 68, 72, 174),fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  color: Color.fromARGB(255, 68, 72, 174),
+                  fontWeight: FontWeight.bold),
             ),
             automaticallyImplyLeading: false,
             toolbarHeight: 100,
             backgroundColor: Color.fromARGB(255, 235, 234, 250),
             elevation: 0,
             actions: [
-              IconButton(icon: new Icon(Icons.more_horiz, color: Colors.black)),
+              IconButton(
+                  icon: new Icon(Icons.more_horiz,
+                      color: Color.fromARGB(255, 68, 72, 174))),
             ]),
         body: SingleChildScrollView(
           child: Container(
@@ -35,8 +39,9 @@ class BookmarkPage extends StatelessWidget {
                   cursorRadius: 7.0,
                   backgroundColor: Colors.white,
                   style: TextStyle(
-                      fontSize: 16.0, height: 1.0, color: Color.fromARGB(
-                      255, 68, 72, 174)),
+                      fontSize: 16.0,
+                      height: 1.0,
+                      color: Color.fromARGB(255, 68, 72, 174)),
                   margin: EdgeInsets.only(left: 12.0, right: 12.0, top: 9.0),
                   padding: EdgeInsets.only(
                       left: 6.0, right: 6.0, top: 3.0, bottom: 3.0),
@@ -98,13 +103,13 @@ class BookmarkPage extends StatelessWidget {
                       image: AssetImage("assets/images/braga.png"),
                       fit: BoxFit.cover),
                   title: const Text(
-                    "Lisa",
+                    "Braga City",
                     style: TextStyle(
                         fontSize: 24, color: Color.fromARGB(255, 60, 59, 59)),
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1,
                   ),
-                  subtitle: const Text("A model from NY",
+                  subtitle: const Text("Jalan Bersejarah di Bandung yang Indah",
                       style: TextStyle(
                           fontSize: 13,
                           color: Color.fromARGB(255, 60, 59, 59))),
@@ -128,13 +133,14 @@ class BookmarkPage extends StatelessWidget {
                       image: AssetImage("assets/images/geologi.png"),
                       fit: BoxFit.cover),
                   title: const Text(
-                    "Lisa",
+                    "Museum Geologi",
                     style: TextStyle(
                         fontSize: 24, color: Color.fromARGB(255, 60, 59, 59)),
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1,
                   ),
-                  subtitle: const Text("A model from NY",
+                  subtitle: const Text(
+                      "Museum yang Membawa Rasa Menyelam didalamnya",
                       style: TextStyle(
                           fontSize: 13,
                           color: Color.fromARGB(255, 60, 59, 59))),
@@ -158,13 +164,13 @@ class BookmarkPage extends StatelessWidget {
                       image: AssetImage("assets/images/braga.png"),
                       fit: BoxFit.cover),
                   title: const Text(
-                    "Lisa",
+                    "Museum boscha",
                     style: TextStyle(
                         fontSize: 24, color: Color.fromARGB(255, 60, 59, 59)),
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1,
                   ),
-                  subtitle: const Text("A model from NY",
+                  subtitle: const Text("Museum yang Terkenal dengan keunikanya",
                       style: TextStyle(
                           fontSize: 13,
                           color: Color.fromARGB(255, 60, 59, 59))),
@@ -189,13 +195,14 @@ class BookmarkPage extends StatelessWidget {
                       image: AssetImage("assets/images/gedungsate.png"),
                       fit: BoxFit.cover),
                   title: const Text(
-                    "Lisa",
+                    "Museum Asia Afrika",
                     style: TextStyle(
                         fontSize: 24, color: Color.fromARGB(255, 60, 59, 59)),
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1,
                   ),
-                  subtitle: const Text("A model from NY",
+                  subtitle: const Text(
+                      "Museum Konferensi Asia Afrika di Bandung",
                       style: TextStyle(
                           fontSize: 13,
                           color: Color.fromARGB(255, 60, 59, 59))),

@@ -99,7 +99,7 @@ class _WidgetByKategoriState extends State<WidgetByKategori> {
                   child: Text(
                     "Selengkapnya",
                     style: TextStyle(
-                      color: Colors.blue,
+                      color: Color.fromARGB(255, 159, 94, 238),
                     ),
                   ),
                 ),

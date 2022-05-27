@@ -20,19 +20,18 @@ class _EventPageState extends State<EventPage> {
             Container(
               height: 115,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(50),
-                ),
-                color: Color(0xFFA3A5F1),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.3),
-                    offset: const Offset(1.0, 1.0),
-                    blurRadius: 1.0,
-                    spreadRadius: 1.0,
+                  borderRadius: BorderRadius.only(
+                    bottomRight: Radius.circular(50),
                   ),
-                ]
-              ),
+                  color: Color(0xFFA3A5F1),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.3),
+                      offset: const Offset(1.0, 1.0),
+                      blurRadius: 1.0,
+                      spreadRadius: 1.0,
+                    ),
+                  ]),
               child: Stack(
                 children: [
                   Positioned(
@@ -55,7 +54,10 @@ class _EventPageState extends State<EventPage> {
                     left: 20,
                     child: Text(
                       "Let's join the event",
-                      style: TextStyle(fontSize: 20, color: Color(0xff4448ae), fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Color(0xff4448ae),
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],
@@ -90,10 +92,10 @@ class _EventPageState extends State<EventPage> {
                         height: 2000,
                         width: 150,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15.0),
-                          image: DecorationImage(
-                              fit: BoxFit.fill,
-                              image: AssetImage('assets/images/braga.png'))),
+                            borderRadius: BorderRadius.circular(15.0),
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage('assets/images/braga.png'))),
                       ),
                     ),
                   ),
@@ -101,7 +103,7 @@ class _EventPageState extends State<EventPage> {
                     top: 20,
                     left: 170,
                     child: Text(
-                      "Braga",
+                      "NGABARAGA",
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.black,
@@ -114,8 +116,9 @@ class _EventPageState extends State<EventPage> {
                     child: Text(
                       "Lorem ipsum dolor sit amet",
                       style: TextStyle(
-                          fontSize: 12,
-                          color: Colors.black,),
+                        fontSize: 12,
+                        color: Colors.black,
+                      ),
                     ),
                   ),
                 ],
@@ -141,7 +144,129 @@ class _EventPageState extends State<EventPage> {
                     child: Card(
                       elevation: 10.0,
                       shadowColor:
-                      Color.fromARGB(255, 29, 11, 11).withOpacity(0.5),
+                          Color.fromARGB(255, 29, 11, 11).withOpacity(0.5),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(25.0),
+                      ),
+                      child: Container(
+                        height: 2000,
+                        width: 150,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15.0),
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage(
+                                    'assets/images/gedungsate.png'))),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    top: 20,
+                    left: 170,
+                    child: Text(
+                      "NYATE",
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Positioned(
+                    top: 50,
+                    left: 170,
+                    child: Text(
+                      "Lorem ipsum dolor sit amet",
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              height: 150,
+              padding: EdgeInsets.only(top: 20),
+              child: Stack(
+                children: [
+                  Positioned(
+                    child: Material(
+                      child: Container(
+                          height: 150.0,
+                          width: width * 0.9,
+                          decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 235, 234, 250),
+                            borderRadius: BorderRadius.circular(25.0),
+                          )),
+                    ),
+                  ),
+                  Positioned(
+                    child: Card(
+                      elevation: 10.0,
+                      shadowColor:
+                          Color.fromARGB(255, 29, 11, 11).withOpacity(0.5),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(25.0),
+                      ),
+                      child: Container(
+                        height: 2000,
+                        width: 150,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15.0),
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image:
+                                    AssetImage('assets/images/geologi.png'))),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    top: 20,
+                    left: 170,
+                    child: Text(
+                      "NGAMPUSE",
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Positioned(
+                    top: 50,
+                    left: 170,
+                    child: Text(
+                      "Lorem ipsum dolor sit amet",
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              height: 150,
+              padding: EdgeInsets.only(top: 20),
+              child: Stack(
+                children: [
+                  Positioned(
+                    child: Material(
+                      child: Container(
+                          height: 150.0,
+                          width: width * 0.9,
+                          decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 235, 234, 250),
+                            borderRadius: BorderRadius.circular(25.0),
+                          )),
+                    ),
+                  ),
+                  Positioned(
+                    child: Card(
+                      elevation: 10.0,
+                      shadowColor:
+                          Color.fromARGB(255, 29, 11, 11).withOpacity(0.5),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(25.0),
                       ),
@@ -174,125 +299,8 @@ class _EventPageState extends State<EventPage> {
                       "Lorem ipsum dolor sit amet",
                       style: TextStyle(
                         fontSize: 12,
-                        color: Colors.black,),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              height: 150,
-              padding: EdgeInsets.only(top: 20),
-              child: Stack(
-                children: [
-                  Positioned(
-                    child: Material(
-                      child: Container(
-                          height: 150.0,
-                          width: width * 0.9,
-                          decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 235, 234, 250),
-                            borderRadius: BorderRadius.circular(25.0),
-                          )),
-                    ),
-                  ),
-                  Positioned(
-                    child: Card(
-                      elevation: 10.0,
-                      shadowColor:
-                      Color.fromARGB(255, 29, 11, 11).withOpacity(0.5),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(25.0),
+                        color: Colors.black,
                       ),
-                      child: Container(
-                        height: 2000,
-                        width: 150,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15.0),
-                            image: DecorationImage(
-                                fit: BoxFit.fill,
-                                image: AssetImage('assets/images/braga.png'))),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 20,
-                    left: 170,
-                    child: Text(
-                      "Braga",
-                      style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                  Positioned(
-                    top: 50,
-                    left: 170,
-                    child: Text(
-                      "Lorem ipsum dolor sit amet",
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.black,),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              height: 150,
-              padding: EdgeInsets.only(top: 20),
-              child: Stack(
-                children: [
-                  Positioned(
-                    child: Material(
-                      child: Container(
-                          height: 150.0,
-                          width: width * 0.9,
-                          decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 235, 234, 250),
-                            borderRadius: BorderRadius.circular(25.0),
-                          )),
-                    ),
-                  ),
-                  Positioned(
-                    child: Card(
-                      elevation: 10.0,
-                      shadowColor:
-                      Color.fromARGB(255, 29, 11, 11).withOpacity(0.5),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(25.0),
-                      ),
-                      child: Container(
-                        height: 2000,
-                        width: 150,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15.0),
-                            image: DecorationImage(
-                                fit: BoxFit.fill,
-                                image: AssetImage('assets/images/braga.png'))),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    top: 20,
-                    left: 170,
-                    child: Text(
-                      "Braga",
-                      style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                  Positioned(
-                    top: 50,
-                    left: 170,
-                    child: Text(
-                      "Lorem ipsum dolor sit amet",
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.black,),
                     ),
                   ),
                 ],

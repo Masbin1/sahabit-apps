@@ -204,7 +204,7 @@ class _SelengkapnyaPageState extends State<SelengkapnyaPage> {
 
   Widget buildAppBar(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.blue,
+      backgroundColor: Color.fromARGB(255, 163, 165, 241),
       title: InkWell(
         onTap: () {
           setState(() {
@@ -230,7 +230,8 @@ class _SelengkapnyaPageState extends State<SelengkapnyaPage> {
               fillColor: Colors.white,
               filled: true,
 
-              suffixIcon: Icon(Icons.search, color: Colors.blue),
+              suffixIcon:
+                  Icon(Icons.search, color: Color.fromARGB(255, 163, 165, 241)),
               hintText: "Search " + widget.title,
               //hintStyle: TextStyle(color: Colors.white),
             ),

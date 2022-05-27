@@ -186,19 +186,35 @@ class _HomePageState extends State<HomePage> {
   TidakSearching() {
     return SingleChildScrollView(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 20, left: 30, right: 30),
-            child: Text(
-              "Hallo, Olivia",
-              style: TextStyle(
-                  fontSize: 24,
-                  color: Color.fromARGB(255, 69, 71, 157),
-                  fontWeight: FontWeight.bold),
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(
+                  top: 20,
+                  left: 30,
+                ),
+                child: Text(
+                  "Hallo, Olivia",
+                  style: TextStyle(
+                      fontSize: 24,
+                      color: Color.fromARGB(255, 69, 71, 157),
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 20, right: 40),
+                child: new Icon(
+                  Icons.account_circle_rounded,
+                  size: 50,
+                  color: Color.fromARGB(255, 163, 165, 241),
+                ),
+              ),
+            ],
           ),
-          SizedBox(height: 20),
+          SizedBox(height: 10),
           BuildSlider(),
           SizedBox(height: 20),
           Row(
@@ -224,7 +240,7 @@ class _HomePageState extends State<HomePage> {
               //   },
               // )
               BuildButton(
-                title: "Voucher",
+                title: "Bookmark",
                 icon: Icons.paid_sharp,
                 press: () {
                   Navigator.of(context).push(
@@ -252,6 +268,7 @@ class _HomePageState extends State<HomePage> {
   Widget buildAppBar(BuildContext context) {
     return AppBar(
       backgroundColor: Color.fromARGB(255, 163, 165, 241),
+      automaticallyImplyLeading: false,
       title: GestureDetector(
         child: InkWell(
           onTap: () {
@@ -259,7 +276,7 @@ class _HomePageState extends State<HomePage> {
               if (icon.icon == Icons.search) {
                 icon = Icon(
                   Icons.close,
-                  color: Colors.blue,
+                  color: Color.fromARGB(255, 163, 165, 241),
                 );
                 _handleSearchStart();
               } else {

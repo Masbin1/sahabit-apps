@@ -48,12 +48,15 @@ class Body extends StatelessWidget {
           ),
         ),
         SizedBox(height: 10.0),
-        Text(
-          deskripsi,
-          style: TextStyle(
-            fontSize: 15.0,
-            color: Colors.grey,
-            fontWeight: FontWeight.w600,
+        Padding(
+          padding: const EdgeInsets.only(left: 30, right: 32),
+          child: Text(
+            deskripsi,
+            style: TextStyle(
+              fontSize: 15.0,
+              color: Colors.grey,
+              fontWeight: FontWeight.w600,
+            ),
           ),
         ),
         SizedBox(height: 20.0),
