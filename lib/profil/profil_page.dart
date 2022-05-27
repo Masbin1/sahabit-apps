@@ -16,12 +16,14 @@ class _ProfilPageState extends State<ProfilPage> {
   bool login = false;
   String userid;
   String nama;
+  String level;
   cekLogin() async {
     final prefs = await SharedPreferences.getInstance();
     setState(() {
       login = prefs.getBool('login') ?? false;
       userid = prefs.getString('username') ?? "";
       nama = prefs.getString('nama') ?? "";
+      level = prefs.getString('level') ?? "";
     });
   }
 
@@ -38,6 +40,8 @@ class _ProfilPageState extends State<ProfilPage> {
         //   backgroundColor: Colors.blue,
         //   // title: Text("Akun Saya"),
         // ),
-        body: login ? LoginProfile(userid: userid, nama: nama) : LoginPage());
+        body: login
+            ? LoginProfile(userid: userid, nama: nama, level: level)
+            : LoginPage());
   }
 }

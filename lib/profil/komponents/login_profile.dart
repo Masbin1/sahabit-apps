@@ -10,8 +10,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LoginProfile extends StatefulWidget {
-  final String userid, nama;
-  const LoginProfile({Key key, this.userid, this.nama}) : super(key: key);
+  final String userid, nama, level;
+  const LoginProfile({Key key, this.userid, this.nama, this.level})
+      : super(key: key);
 
   @override
   State<LoginProfile> createState() => _LoginProfileState();
@@ -34,7 +35,7 @@ class _LoginProfileState extends State<LoginProfile> {
           ImageWithIcon(),
           SizedBox(height: 15),
           Text(
-            "Hi, " + widget.nama,
+            "Hi, " + widget.nama + " (" + widget.level + ")",
             style: TextStyle(fontSize: 20, color: Colors.blue),
           ),
           SizedBox(height: 15),

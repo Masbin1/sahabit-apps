@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       ),
       home: LauncherPage(),
       routes: <String, WidgetBuilder>{
-        // '/landingusers': (context) => IntroPage(),
+        '/intropage': (context) => IntroPage(),
         '/landingusers': (context) => LandingPage(),
         '/keranjangusers': (context) => LandingPage(nav: '1'),
         // '/signup': (context) => SignupPage(),

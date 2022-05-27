@@ -60,10 +60,11 @@ class _LoginPageState extends State<LoginPage> {
       print(url);
       var response = json.decode(res.body);
       if (response['response_status'] == 'OK' &&
-          response['data'][0]['level'] == '3') {
+          response['data'][0]['level'] == 'Guide') {
         prefs.setBool('login', true);
         prefs.setString('username', response['data'][0]['username']);
         prefs.setString('nama', response['data'][0]['nama']);
+        prefs.setString('level', response['data'][0]['level']);
         if (widget.nav == "") {
           Navigator.of(context)
               .pushNamedAndRemoveUntil('/landingusers', (route) => false);
@@ -71,6 +72,20 @@ class _LoginPageState extends State<LoginPage> {
           _updateKeranjang(response['data'][0]['username']);
           Navigator.of(context)
               .pushNamedAndRemoveUntil('/keranjangusers', (route) => false);
+        }
+      } else if (response['response_status'] == 'OK' &&
+          response['data'][0]['level'] == 'User') {
+        prefs.setBool('login', true);
+        prefs.setString('username', response['data'][0]['username']);
+        prefs.setString('nama', response['data'][0]['nama']);
+        prefs.setString('level', response['data'][0]['level']);
+        if (widget.nav == "") {
+          Navigator.of(context)
+              .pushNamedAndRemoveUntil('/intropage', (route) => false);
+        } else {
+          _updateKeranjang(response['data'][0]['username']);
+          Navigator.of(context)
+              .pushNamedAndRemoveUntil('/intropage', (route) => false);
         }
       } else {
         _showAlertDialog(context, response['response_message']);
