@@ -5,6 +5,7 @@ import 'package:sahabit_apps/detail/komponent/body.dart';
 import 'package:sahabit_apps/detail/komponent/build_bottom_app_bar.dart';
 import 'package:sahabit_apps/helper/dbhelper.dart';
 import 'package:sahabit_apps/konstant.dart';
+import 'package:sahabit_apps/landing_page.dart';
 import 'package:sahabit_apps/model/keranjang.dart';
 import 'package:sqflite/sqflite.dart';
 
@@ -115,8 +116,24 @@ class _ProdukDetailPageState extends State<ProdukDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: Text("Detail Furniture"),
+        title: Text(
+          "Detail Informasi",
+          style: TextStyle(color: Colors.black),
+        ),
+        toolbarHeight: 80,
+        backgroundColor: Colors.white,
+        elevation: 0,
+        leading: GestureDetector(
+          onTap: () {
+            Route route =
+                MaterialPageRoute(builder: (context) => LandingPage());
+            Navigator.push(context, route);
+          },
+          child: Icon(
+            Icons.arrow_back,
+            color: Color.fromARGB(255, 64, 60, 60),
+          ),
+        ),
       ),
       body: Stack(
         children: [
@@ -126,8 +143,8 @@ class _ProdukDetailPageState extends State<ProdukDetailPage> {
               children: [
                 Body(
                   judul: widget.judul,
-                  harga: widget.harga,
                   deskripsi: widget.deskripsi,
+                  harga: widget.harga,
                   url: iUrl + "/" + widget.thumbnail,
                   fav: fav,
                   press: () {

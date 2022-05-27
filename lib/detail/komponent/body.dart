@@ -39,11 +39,28 @@ class Body extends StatelessWidget {
             ),
           ),
         ),
+        SizedBox(height: 30.0),
+        Text(
+          "Deskripsi",
+          style: TextStyle(
+            fontSize: 18.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         SizedBox(height: 10.0),
+        Text(
+          deskripsi,
+          style: TextStyle(
+            fontSize: 15.0,
+            color: Colors.grey,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        SizedBox(height: 20.0),
         Container(
           padding: EdgeInsets.only(right: 20),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Text(
                 harga,
@@ -63,24 +80,6 @@ class Body extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(height: 30.0),
-        Text(
-          "Deskripsi",
-          style: TextStyle(
-            fontSize: 18.0,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        SizedBox(height: 10.0),
-        Text(
-          deskripsi,
-          style: TextStyle(
-            fontSize: 15.0,
-            color: Colors.grey,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-        SizedBox(height: 20.0),
       ],
     );
   }

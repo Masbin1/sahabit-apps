@@ -67,11 +67,15 @@ class BuildBottomAppBar extends StatelessWidget {
                         ),
                       ),
                       decoration: BoxDecoration(
-                        color: instok == true ? Colors.blue : Colors.grey,
+                        color: instok == true
+                            ? Color.fromARGB(255, 69, 71, 157)
+                            : Colors.grey,
                         borderRadius: BorderRadius.circular(18),
                         boxShadow: [
                           BoxShadow(
-                            color: instok == true ? Colors.blue : Colors.grey,
+                            color: instok == true
+                                ? Color.fromARGB(255, 69, 71, 157)
+                                : Colors.grey,
                             spreadRadius: 1,
                           ),
                         ],
