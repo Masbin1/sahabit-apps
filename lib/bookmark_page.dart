@@ -82,8 +82,7 @@ class BookmarkPage extends StatelessWidget {
                       onPressed: () {},
                       icon: const Icon(
                         Icons.bookmark,
-                        size: 30,
-                        color: Colors.black,
+                        color: Color.fromARGB(255, 68, 72, 174),
                       )),
                 ),
                 const SizedBox(height: 20),
@@ -113,7 +112,7 @@ class BookmarkPage extends StatelessWidget {
                       onPressed: () {},
                       icon: const Icon(
                         Icons.bookmark,
-                        color: Colors.black,
+                        color: Color.fromARGB(255, 68, 72, 174),
                       )),
                 ),
                 //
@@ -143,7 +142,7 @@ class BookmarkPage extends StatelessWidget {
                       onPressed: () {},
                       icon: const Icon(
                         Icons.bookmark,
-                        color: Colors.black,
+                        color: Color.fromARGB(255, 68, 72, 174),
                       )),
                 ),
                 const SizedBox(height: 20),
@@ -173,7 +172,7 @@ class BookmarkPage extends StatelessWidget {
                       onPressed: () {},
                       icon: const Icon(
                         Icons.bookmark,
-                        color: Colors.black,
+                        color: Color.fromARGB(255, 68, 72, 174),
                       )),
                 ),
                 //
@@ -204,7 +203,7 @@ class BookmarkPage extends StatelessWidget {
                       onPressed: () {},
                       icon: const Icon(
                         Icons.bookmark,
-                        color: Colors.black,
+                        color: Color.fromARGB(255, 68, 72, 174),
                       )),
                 ),
               ],

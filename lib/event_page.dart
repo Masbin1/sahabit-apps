@@ -54,8 +54,8 @@ class _EventPageState extends State<EventPage> {
                     top: 42,
                     left: 20,
                     child: Text(
-                      "Event",
-                      style: TextStyle(fontSize: 20, color: Color(0xff4448ae)),
+                      "Let's join the event",
+                      style: TextStyle(fontSize: 20, color: Color(0xff4448ae), fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],
