@@ -125,7 +125,7 @@ class BookmarkPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8),
                   showBanner: false,
                   imageContainer: const Image(
-                      image: AssetImage("assets/images/geologi.jpeg"),
+                      image: AssetImage("assets/images/geologi.png"),
                       fit: BoxFit.cover),
                   title: const Text(
                     "Lisa",

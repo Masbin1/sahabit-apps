@@ -16,7 +16,7 @@ class _BuildSliderState extends State<BuildSlider> {
   List<int> cardList = [1, 2, 3];
   List<String> imgSlider = [
     'assets/images/gedungsate.png',
-    'assets/images/geologi.jpeg',
+    'assets/images/geologi.png',
     'assets/images/braga.png',
   ];
   List<T> map<T>(List list, Function handler) {
