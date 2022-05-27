@@ -46,8 +46,9 @@ dependencies:
   image_picker: ^0.8.4+11
   websafe_svg: ^2.1.1
   sign_button: ^2.0.2
-  # introduction_screen: ^1.0.9
+  banner_listtile: ^2.2.0
   flutter_onboard: ^2.0.0
+  fsearch: ^1.0.1
 
 dev_dependencies:
   flutter_test:
