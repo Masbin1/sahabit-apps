@@ -3,7 +3,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:sahabit_apps/introduction/first_page.dart';
+import 'package:sahabit_apps/introduction/intro.dart';
 
 class LauncherPage extends StatefulWidget {
   const LauncherPage({Key key}) : super(key: key);
@@ -23,7 +23,7 @@ class _LauncherPageState extends State<LauncherPage> {
     var duration = const Duration(seconds: 3);
     return Timer(duration, () {
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => FirstPage()));
+          MaterialPageRoute(builder: (context) => IntroPage()));
     });
   }
 
@@ -37,7 +37,10 @@ class _LauncherPageState extends State<LauncherPage> {
         width: double.infinity,
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color.fromARGB(255, 233, 228, 234), Color.fromARGB(255, 168, 81, 240)],
+            colors: [
+              Color.fromARGB(255, 233, 228, 234),
+              Color.fromARGB(255, 156, 77, 241)
+            ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),

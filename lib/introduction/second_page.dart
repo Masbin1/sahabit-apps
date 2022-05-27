@@ -28,7 +28,7 @@ class SecondPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 100, bottom: 20),
               child: Text(
-                "KUTIK-IN",
+                "Sahabat Museum",
                 style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,

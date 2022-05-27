@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:sahabit_apps/introduction/intro.dart';
 import 'package:sahabit_apps/landing_page.dart';
 import 'package:sahabit_apps/launcher_page.dart';
 
@@ -22,7 +23,9 @@ class MyApp extends StatelessWidget {
       ),
       home: LauncherPage(),
       routes: <String, WidgetBuilder>{
-        '/landingusers': (context) => LandingPage(),
+        
+        '/landingusers': (context) => IntroPage(),
+        // '/landingusers': (context) => LandingPage(),
         '/keranjangusers': (context) => LandingPage(nav: '1'),
         // '/signup': (context) => SignupPage(),
         // '/forgot': (context) => Forgotpage(),
