@@ -88,15 +88,15 @@ class _LandingPageState extends State<LandingPage> {
                     text: 'Home',
                   ),
                   GButton(
-                    icon: Icons.bookmark,
+                    icon: Icons.bookmark_outline,
                     text: 'Bookmark',
                   ),
                   GButton(
-                    icon: Icons.bookmark,
+                    icon: Icons.calendar_month_outlined,
                     text: 'Event',
                   ),
                   GButton(
-                    icon: Icons.book,
+                    icon: Icons.article_outlined,
                     text: 'Booking',
                   ),
                   GButton(
