@@ -66,7 +66,7 @@ class _BuildSliderState extends State<BuildSlider> {
                 height: 10.0,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 2.0),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                   color: _currentIndex == index
                       ? Color.fromARGB(255, 159, 94, 238)
                       : Color.fromARGB(255, 202, 111, 223).withOpacity(0.3),
