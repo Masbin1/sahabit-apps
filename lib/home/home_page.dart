@@ -3,6 +3,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:sahabit_apps/bookmark_page.dart';
 import 'package:sahabit_apps/detail/produkdetailpage.dart';
 import 'package:sahabit_apps/home/komponents/build_button.dart';
 import 'package:sahabit_apps/home/komponents/build_slider.dart';
@@ -13,7 +14,6 @@ import 'package:sahabit_apps/model/kategori.dart';
 import 'package:http/http.dart' as http;
 import 'package:sahabit_apps/model/produk.dart';
 import 'package:sahabit_apps/temukan_page.dart';
-import 'package:sahabit_apps/voucher_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
@@ -219,7 +219,7 @@ class _HomePageState extends State<HomePage> {
                 icon: Icons.paid_sharp,
                 press: () {
                   Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => VoucherPage()));
+                      MaterialPageRoute(builder: (context) => BookmarkPage()));
                 },
               )
             ],

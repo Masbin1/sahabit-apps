@@ -2,12 +2,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:sahabit_apps/bookmark_page.dart';
 import 'package:sahabit_apps/home/home_page.dart';
 import 'package:sahabit_apps/maps_page.dart';
 import 'package:sahabit_apps/profil/profil_page.dart';
 import 'package:sahabit_apps/transaksi/pembayaran/list_pembayaran.dart';
 import 'package:sahabit_apps/transaksi/status_page.dart';
 import 'package:sahabit_apps/transaksi/transaksi_page.dart';
+
+import 'event_page.dart';
 
 class LandingPage extends StatefulWidget {
   final String nav;
@@ -21,9 +24,9 @@ class _LandingPageState extends State<LandingPage> {
   int _bottomNavCurrentIndex = 0;
   final List<Widget> _container = [
     HomePage(),
+    BookmarkPage(),
+    EventPage(),
     TransaksiPage(),
-    VoucherPage(),
-    StatusPage(),
     ProfilPage(),
   ];
 

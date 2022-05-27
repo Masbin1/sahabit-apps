@@ -4,4 +4,4 @@ import 'package:flutter/material.dart';
 
 Color primaryColor = Color(0xFF050522);
 // String sUrl = "kutikin.000webhostapp.com";
-String sUrl = "192.168.100.89";
+String sUrl = "192.168.43.145";
