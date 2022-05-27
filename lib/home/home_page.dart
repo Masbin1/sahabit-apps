@@ -193,7 +193,7 @@ class _HomePageState extends State<HomePage> {
               "Hallo, Olivia",
               style: TextStyle(
                   fontSize: 24,
-                  color: Color.fromARGB(255, 159, 94, 238),
+                  color: Color.fromARGB(255, 69, 71, 157),
                   fontWeight: FontWeight.bold),
             ),
           ),
@@ -204,7 +204,7 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               BuildButton(
-                title: "Temukan Kami",
+                title: "Temukan Yang Menarik",
                 icon: Icons.location_on,
                 press: () {
                   Navigator.of(context).push(
@@ -214,14 +214,14 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 width: 10,
               ),
-              BuildButton(
-                title: "Voucher",
-                icon: Icons.paid_sharp,
-                press: () {
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => BookmarkPage()));
-                },
-              )
+              // BuildButton(
+              //   title: "Voucher",
+              //   icon: Icons.paid_sharp,
+              //   press: () {
+              //     Navigator.of(context).push(
+              //         MaterialPageRoute(builder: (context) => BookmarkPage()));
+              //   },
+              // )
             ],
           ),
           SizedBox(
@@ -242,7 +242,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget buildAppBar(BuildContext context) {
     return AppBar(
-      backgroundColor: Color.fromARGB(255, 159, 94, 238),
+      backgroundColor: Color.fromARGB(255, 163, 165, 241),
       title: GestureDetector(
         child: InkWell(
           onTap: () {

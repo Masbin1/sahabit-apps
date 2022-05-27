@@ -10,15 +10,15 @@ class BookmarkPage extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
-        backgroundColor: Color.fromARGB(255, 202, 202, 202),
+        backgroundColor: Color.fromARGB(255, 235, 234, 250),
         appBar: AppBar(
             title: Text(
-              "My Bookmark",
-              style: TextStyle(color: Colors.black),
+              "My Bookmarks",
+              style: TextStyle(color: Color.fromARGB(255, 68, 72, 174),fontWeight: FontWeight.bold),
             ),
             automaticallyImplyLeading: false,
             toolbarHeight: 100,
-            backgroundColor: Color.fromARGB(255, 202, 202, 202),
+            backgroundColor: Color.fromARGB(255, 235, 234, 250),
             elevation: 0,
             actions: [
               IconButton(icon: new Icon(Icons.more_horiz, color: Colors.black)),
@@ -32,10 +32,11 @@ class BookmarkPage extends StatelessWidget {
               children: [
                 FSearch(
                   height: 40.0,
-                  cursorRadius: 5.0,
+                  cursorRadius: 7.0,
                   backgroundColor: Colors.white,
                   style: TextStyle(
-                      fontSize: 16.0, height: 1.0, color: Colors.grey),
+                      fontSize: 16.0, height: 1.0, color: Color.fromARGB(
+                      255, 68, 72, 174)),
                   margin: EdgeInsets.only(left: 12.0, right: 12.0, top: 9.0),
                   padding: EdgeInsets.only(
                       left: 6.0, right: 6.0, top: 3.0, bottom: 3.0),
@@ -55,7 +56,7 @@ class BookmarkPage extends StatelessWidget {
                   onTap: () {},
                   // height: 150,
                   backgroundColor: Color.fromARGB(255, 255, 255, 255),
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(20),
                   showBanner: false,
                   imageContainer: Image(
                       image: AssetImage("assets/images/gedungsate.png"),
@@ -92,7 +93,7 @@ class BookmarkPage extends StatelessWidget {
                   onTap: () {},
                   backgroundColor: Color.fromARGB(255, 255, 255, 255),
                   bannerPositionRight: true,
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(20),
                   showBanner: false,
                   imageContainer: const Image(
                       image: AssetImage("assets/images/braga.png"),
@@ -122,7 +123,7 @@ class BookmarkPage extends StatelessWidget {
                   onTap: () {},
                   backgroundColor: Color.fromARGB(255, 255, 255, 255),
                   bannerPositionRight: true,
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(20),
                   showBanner: false,
                   imageContainer: const Image(
                       image: AssetImage("assets/images/geologi.png"),
@@ -152,7 +153,7 @@ class BookmarkPage extends StatelessWidget {
                   onTap: () {},
                   backgroundColor: Color.fromARGB(255, 255, 255, 255),
                   bannerPositionRight: true,
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(20),
                   showBanner: false,
                   imageContainer: const Image(
                       image: AssetImage("assets/images/braga.png"),
@@ -183,7 +184,7 @@ class BookmarkPage extends StatelessWidget {
                   onTap: () {},
                   backgroundColor: Color.fromARGB(255, 255, 255, 255),
                   bannerPositionRight: true,
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(20),
                   showBanner: false,
                   imageContainer: const Image(
                       image: AssetImage("assets/images/gedungsate.png"),

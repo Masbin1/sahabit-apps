@@ -18,20 +18,20 @@ class _EventPageState extends State<EventPage> {
         Column(
           children: [
             Container(
-              height: 230,
+              height: 115,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                   bottomRight: Radius.circular(50),
                 ),
-                color: Color(0xFF464f93),
+                color: Color(0xff4448ae),
               ),
               child: Stack(
                 children: [
                   Positioned(
-                    top: 80,
+                    top: 30,
                     left: 0,
                     child: Container(
-                      height: 100,
+                      height: 50,
                       width: 360,
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -43,11 +43,11 @@ class _EventPageState extends State<EventPage> {
                     ),
                   ),
                   Positioned(
-                    top: 110,
+                    top: 42,
                     left: 20,
                     child: Text(
-                      "YourBooks",
-                      style: TextStyle(fontSize: 20, color: Color(0xFF464f93)),
+                      "Event",
+                      style: TextStyle(fontSize: 20, color: Color(0xff4448ae)),
                     ),
                   ),
                 ],
@@ -61,11 +61,11 @@ class _EventPageState extends State<EventPage> {
                   Positioned(
                     child: Material(
                       child: Container(
-                          height: 188.0,
+                          height: 200.0,
                           width: width * 0.9,
                           decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 239, 227, 227),
-                            borderRadius: BorderRadius.circular(0.0),
+                            color: Color.fromARGB(255, 235, 234, 250),
+                            borderRadius: BorderRadius.circular(25.0),
                           )),
                     ),
                   ),
@@ -75,13 +75,13 @@ class _EventPageState extends State<EventPage> {
                       shadowColor:
                           Color.fromARGB(255, 29, 11, 11).withOpacity(0.5),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
+                        borderRadius: BorderRadius.circular(25.0),
                       ),
                       child: Container(
-                        height: 200,
+                        height: 2000,
                         width: 150,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10.0),
+                            borderRadius: BorderRadius.circular(15.0),
                             image: DecorationImage(
                                 fit: BoxFit.fill,
                                 image: AssetImage('assets/images/braga.png'))),

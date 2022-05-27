@@ -83,7 +83,7 @@ class _LandingPageState extends State<LandingPage> {
                 iconSize: 24,
                 padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 duration: Duration(milliseconds: 400),
-                tabBackgroundColor: Color.fromARGB(255, 159, 94, 238),
+                tabBackgroundColor: Color.fromARGB(255, 163, 165, 241),
                 color: Colors.black, // navigation bar padding
                 tabs: const [
                   GButton(

@@ -27,15 +27,15 @@ class BuildButton extends StatelessWidget {
             SizedBox(height: 5),
             Text(title,
                 style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 12,
                     fontWeight: FontWeight.w500,
                     color: Colors.white)),
           ],
         ),
         style: ElevatedButton.styleFrom(
-            primary: Colors.blue,
+            primary: Color.fromARGB(255, 163, 165, 241),
             shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(15))),
+                borderRadius: BorderRadius.circular(25))),
       ),
     );
   }
